@@ -1,5 +1,5 @@
 <h1 align="center">
-    📱 <a href="#" alt="site do ecoleta"> App de Tarefas </a>
+    📱 <a href="#" alt="site do ecoleta"> App "Desafio de progressão: flexões" </a>
 </h1>
 
 <p align="center">
@@ -20,6 +20,8 @@
 ## 💻 Sobre o projeto
 
 Versão alternativa de aplicativo feito no curso "Flutter: Widgets, Stateless, Stateful, Imagens e Animações" disponível na [Alura](https://www.alura.com.br/).
+
+No curso são vistos conceitos básicos de criação de aplicativos com flutter. Para praticá-los decidi mudar a proposta aproveitando maior parte das funcionalidades e me desafiar com a parte de temas.
 
 ## ⚙️ Funcionalidades
 
@@ -43,7 +45,7 @@ Versão alternativa de aplicativo feito no curso "Flutter: Widgets, Stateless, S
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no Figma:
+O layout original da aplicação está disponível no Figma:
 
 <a href="https://www.figma.com/file/CNugKAFpmpYkx4gutN9dCQ/2555---Flutter%3A-Crie-seu-primeiro-App?type=design&mode=design&t=TQizKqap4YnowRo8-0">
   <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">

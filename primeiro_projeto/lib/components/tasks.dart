@@ -33,7 +33,16 @@ class _TasksState extends State<Tasks> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
-                color: Colors.blue,
+                //color: Color.fromRGBO(239,125,0,1.000 ),
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Colors.blue,
+                    Colors.green,
+                    //Color.fromRGBO(239,125,0,1.000),
+                  ],
+                ),
               ),
               height: 140,
             ),
@@ -43,7 +52,7 @@ class _TasksState extends State<Tasks> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    color: Colors.white,
+                    color: Color.fromRGBO(40,42,50,1.000),
                   ),
                   height: 100,
                   child: Row(
@@ -116,7 +125,6 @@ class _TasksState extends State<Tasks> {
                       child: Container(
                         width: 200,
                         child: LinearProgressIndicator(
-                          color: Colors.white,
                           value: widget.dificuldade > 0
                               ? ((level / widget.dificuldade) / 10)
                               : 1,
@@ -127,7 +135,6 @@ class _TasksState extends State<Tasks> {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         'Nivel: $level',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ),
                   ],
