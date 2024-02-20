@@ -1,4 +1,4 @@
-import 'package:alura_flutter_curso_1/components/tasks.dart';
+import 'package:alura_flutter_curso_1/components/challenge.dart';
 import 'package:flutter/material.dart';
 
 class InitialScreen extends StatefulWidget {
@@ -23,12 +23,12 @@ class _InitialScreenState extends State<InitialScreen> {
           children: const [
             Padding(
               padding: EdgeInsets.only(top: 8),
-              child: Tasks(
+              child: Challenge(
                   'Flexão com joelho', 'assets/images/flexao-joelhos.gif', 2),
             ),
-            Tasks('Flexão inclinada', 'assets/images/flexao-inclinada.gif', 3),
-            Tasks('Flexão regular', 'assets/images/flexao.gif', 4),
-            Tasks('Flexão diamante', 'assets/images/flexao-diamante.gif', 5),
+            Challenge('Flexão inclinada', 'assets/images/flexao-inclinada.gif', 3),
+            Challenge('Flexão regular', 'assets/images/flexao.gif', 4),
+            Challenge('Flexão diamante', 'assets/images/flexao-diamante.gif', 5),
             SizedBox(
               height: 100,
             ),

@@ -2,19 +2,19 @@
 import 'package:alura_flutter_curso_1/components/difficulty.dart';
 import 'package:flutter/material.dart';
 
-class Tasks extends StatefulWidget {
+class Challenge extends StatefulWidget {
   final String nome;
   final String foto;
   final int dificuldade;
 
-  const Tasks(this.nome, this.foto, this.dificuldade, {Key? key})
+  const Challenge(this.nome, this.foto, this.dificuldade, {Key? key})
       : super(key: key);
 
   @override
-  State<Tasks> createState() => _TasksState();
+  State<Challenge> createState() => _ChallengeState();
 }
 
-class _TasksState extends State<Tasks> {
+class _ChallengeState extends State<Challenge> {
   int level = 1;
 
   void levelUp() {
