@@ -33,9 +33,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.6",
+      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
@@ -51,9 +51,9 @@
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3",
+      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_test",
@@ -63,9 +63,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.1.1",
+      "rootUri": "file:///C:/Users/eliza/AppData/Local/Pub/Cache/hosted/pub.dev/lints-1.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "matcher",
@@ -146,13 +146,13 @@
       "languageVersion": "3.2"
     },
     {
-      "name": "alura_flutter_curso_1",
+      "name": "nosso_primeiro_projeto",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.16"
     }
   ],
-  "generated": "2024-02-08T13:25:26.135261Z",
+  "generated": "2024-02-19T03:31:08.170609Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }

@@ -78,7 +78,7 @@ class _TasksState extends State<Tasks> {
                                   overflow: TextOverflow.ellipsis),
                             ),
                           ),
-                          Difficulty(widget.dificuldade),
+                          // Difficulty(widget.dificuldade),
                           // vai ser um novo componente.
                         ],
                       ),
