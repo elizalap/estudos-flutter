@@ -13,7 +13,29 @@ class ChallengeDao {
   static const String _difficulty = 'difficulty';
   static const String _image = 'image';
 
-  save(Challenge desafio) async {}
+  save(Challenge desafio) async {
+    final Database bancoDeDados = await getDatabase();
+    var itemExists = await find(desafio.nome);
+    Map<String, dynamic> challengeMap = toMap(desafio);
+    if (itemExists.isEmpty) {
+      return await bancoDeDados.insert(_tableName, challengeMap);
+    } else {
+      return await bancoDeDados.update(
+        _tableName,
+        challengeMap,
+        where: '$_name = ?',
+        whereArgs: [desafio.nome],
+      );
+    }
+  }
+
+  Map<String, dynamic> toMap(Challenge desafio) {
+    final Map<String, dynamic> mapaDeDesafios = Map();
+    mapaDeDesafios[_name] = desafio.nome;
+    mapaDeDesafios[_difficulty] = desafio.dificuldade;
+    mapaDeDesafios[_image] = desafio.foto;
+    return mapaDeDesafios;
+  }
 
   Future<List<Challenge>> findAll() async {
     final Database bancoDeDados = await getDatabase();
