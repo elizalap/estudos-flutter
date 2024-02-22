@@ -64,5 +64,12 @@ class ChallengeDao {
     return toList(result);
   }
 
-  delete(String nome) async {}
+  delete(String nome) async {
+    final Database bancoDeDados = await getDatabase();
+    return bancoDeDados.delete(
+      _tableName,
+      where: '$_name = ?',
+      whereArgs: [nome],
+    );
+  }
 }
