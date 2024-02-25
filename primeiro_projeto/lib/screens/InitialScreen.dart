@@ -78,6 +78,16 @@ class _InitialScreenState extends State<InitialScreen> {
               return Text('Erro desconhecido');
             }),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (contextNew) => FormScreen(challengeContext: context,),
+            ),
+          ).then((value) => setState((){}));
+        },
+      ),
 
     );
   }

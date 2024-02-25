@@ -1,3 +1,5 @@
+import 'package:alura_flutter_curso_1/components/challenge.dart';
+import 'package:alura_flutter_curso_1/data/challenge_dao.dart';
 import 'package:flutter/material.dart';
 import 'package:alura_flutter_curso_1/data/challenge_inherited.dart';
 
@@ -126,13 +128,7 @@ class _FormScreenState extends State<FormScreen> {
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // print(nameController.text);
-                        // print(difficultyController.text);
-                        // print(imageController.text);
-                        ChallengeInherited.of(widget.challengeContext).newChallenge(
-                            nameController.text,
-                            imageController.text,
-                            int.parse(difficultyController.text));
+                        ChallengeDao().save(Challenge(nameController.text, imageController.text, int.parse(difficultyController.text)));
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content: Text('Criando uma nova Tarefa'),
