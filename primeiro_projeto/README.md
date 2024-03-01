@@ -23,6 +23,13 @@ Versão alternativa de aplicativo feito no curso "Flutter: Widgets, Stateless, S
 
 No curso são vistos conceitos básicos de criação de aplicativos com flutter. Para praticá-los decidi mudar a proposta aproveitando maior parte das funcionalidades e me desafiar com a parte de temas.
 
+TO-DO:
+
+- [ ]  Corrigir erros de espaçamento
+- [ ]  Colocar botão de adicionar flexão apenas quando a última flexão estiver no nível 3.
+- [ ]  Atualizar readme com os prints, funcionalidades e tecnologias utilizadas.
+- [ ]  Traduzir readme para inglês
+
 ## ⚙️ Funcionalidades
 
 <!-- - [x] Empresas ou entidades podem se cadastrar na plataforma web enviando:
