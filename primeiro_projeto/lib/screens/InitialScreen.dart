@@ -16,7 +16,14 @@ class _InitialScreenState extends State<InitialScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Desafio de progressão: flexões'),
-        leading: Icon(Icons.add_task),
+        leading: Container(),
+        actions: [
+          IconButton(
+              onPressed: () {
+                setState(() {});
+              },
+              icon: Icon(Icons.refresh)),
+        ],
         shadowColor: Colors.black,
       ),
       body: Padding(
@@ -83,12 +90,13 @@ class _InitialScreenState extends State<InitialScreen> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (contextNew) => FormScreen(challengeContext: context,),
+              builder: (contextNew) => FormScreen(
+                challengeContext: context,
+              ),
             ),
-          ).then((value) => setState((){}));
+          ).then((value) => setState(() {}));
         },
       ),
-
     );
   }
 }

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:alura_flutter_curso_1/data/challenge_inherited.dart';
 
 class FormScreen extends StatefulWidget {
-  const FormScreen({Key? key, required this.challengeContext}) : super(key: key);
+  const FormScreen({Key? key, required this.challengeContext})
+      : super(key: key);
 
   final BuildContext challengeContext;
 
@@ -128,7 +129,10 @@ class _FormScreenState extends State<FormScreen> {
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        ChallengeDao().save(Challenge(nameController.text, imageController.text, int.parse(difficultyController.text)));
+                        ChallengeDao().save(Challenge(
+                            nameController.text,
+                            imageController.text,
+                            int.parse(difficultyController.text)));
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content: Text('Criando uma nova Tarefa'),

@@ -1,5 +1,5 @@
-
 import 'package:alura_flutter_curso_1/components/difficulty.dart';
+import 'package:alura_flutter_curso_1/data/challenge_dao.dart';
 import 'package:flutter/material.dart';
 
 class Challenge extends StatefulWidget {
@@ -52,7 +52,7 @@ class _ChallengeState extends State<Challenge> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    color: Color.fromRGBO(40,42,50,1.000),
+                    color: Color.fromRGBO(40, 42, 50, 1.000),
                   ),
                   height: 100,
                   child: Row(
@@ -97,6 +97,9 @@ class _ChallengeState extends State<Challenge> {
                           height: 52,
                           width: 52,
                           child: ElevatedButton(
+                            onLongPress: () {
+                              ChallengeDao().delete(widget.nome);
+                            },
                             onPressed: levelUp,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
