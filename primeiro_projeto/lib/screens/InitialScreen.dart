@@ -22,7 +22,7 @@ class _InitialScreenState extends State<InitialScreen> {
               onPressed: () {
                 setState(() {});
               },
-              icon: Icon(Icons.refresh)),
+              icon: const Icon(Icons.refresh)),
         ],
         shadowColor: Colors.black,
       ),
@@ -96,6 +96,7 @@ class _InitialScreenState extends State<InitialScreen> {
             ),
           ).then((value) => setState(() {}));
         },
+        child: const Icon(Icons.add),
       ),
     );
   }

@@ -33,10 +33,9 @@ class _ChallengeState extends State<Challenge> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
-                //color: Color.fromRGBO(239,125,0,1.000 ),
                 gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
+                  // begin: Alignment.topRight,
+                  // end: Alignment.bottomLeft,
                   colors: [
                     Colors.blue,
                     Colors.green,
@@ -64,15 +63,15 @@ class _ChallengeState extends State<Challenge> {
                           borderRadius: BorderRadius.circular(4),
                           color: Colors.black12,
                         ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(4),
-                          child: Image.asset(
-                            widget.foto,
-                            height: 100,
-                            width: 72,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
+                        //child: ClipRRect(
+                        //  borderRadius: BorderRadius.circular(4),
+                        //  child: Image.asset(
+                        //    widget.foto,
+                        //    height: 100,
+                        //    width: 72,
+                        //    fit: BoxFit.cover,
+                        //  ),
+                        //),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +87,6 @@ class _ChallengeState extends State<Challenge> {
                             ),
                           ),
                           Difficulty(widget.dificuldade),
-                          // vai ser um novo componente.
                         ],
                       ),
                       Padding(
@@ -102,14 +100,10 @@ class _ChallengeState extends State<Challenge> {
                             },
                             onPressed: levelUp,
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: const [
                                 Icon(Icons.arrow_drop_up),
-                                Text(
-                                  'UP',
-                                  style: TextStyle(fontSize: 12),
-                                ),
                               ],
                             ),
                           ),
